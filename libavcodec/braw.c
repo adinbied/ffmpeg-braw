@@ -561,6 +561,7 @@ static av_cold int braw_decode_init(AVCodecContext *avctx)
     return 0;
 }
 
+
 AVCodec ff_braw_decoder = {
     .name             = "braw",
     .long_name        = NULL_IF_CONFIG_SMALL("Blackmagic RAW"),
