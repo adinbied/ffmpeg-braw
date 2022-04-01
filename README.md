@@ -11,6 +11,8 @@ These are the commands I used with differing r,g,and b values based on the color
 ### For 3950K 16T
 ./ffmpeg -i /mnt/i/input.braw -vf colorchannelmixer=rr=0.78:gg=0.58:bb=0.86,tonemap=linear:param=300,tonemap=gamma:param=1.38,curves=psfile='BRAWHLRolloff.acv' -acodec aac -vcodec prores_ks -pix_fmt yuv444p outputProRes.mov
 
+NOTE: I am not actively developing this, just a random side project thrown together in an afternoon
+===============================
 
 It's super slow and inefficient and doesnt use the actual BRAW SDK pipeline for getting frames, but hey it vaguely works.
 --
