@@ -1,0 +1,5 @@
+## For 5250K 30T
+./ffmpeg -i /mnt/l/input.braw -vf colorchannelmixer=rr=0.98:gg=0.62:bb=0.8,tonemap=linear:param=300,tonemap=gamma:param=1.4,curves=psfile='BRAWHLRolloff.acv' -acodec aac -vcodec prores_ks -pix_fmt yuv444p outputProRes.mov
+
+## For 3950K 16T
+./ffmpeg -i /mnt/i/input.braw -vf colorchannelmixer=rr=0.78:gg=0.58:bb=0.86,tonemap=linear:param=300,tonemap=gamma:param=1.38,curves=psfile='BRAWHLRolloff.acv' -acodec aac -vcodec prores_ks -pix_fmt yuv444p outputProRes.mov
