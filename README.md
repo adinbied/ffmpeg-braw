@@ -13,7 +13,7 @@ These are the commands I used with differing r,g,and b values based on the color
 
 
 It's super slow and inefficient and doesnt use the actual BRAW SDK pipeline for getting frames, but hey it vaguely works.
-=============
+--
 
 FFmpeg is a collection of libraries and tools to process multimedia content
 such as audio, video, subtitles and related metadata.
